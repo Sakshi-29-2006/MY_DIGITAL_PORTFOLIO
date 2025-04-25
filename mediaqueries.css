@@ -1,0 +1,151 @@
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+    background-color: #f9f9f9; /* Very light gray for profile */
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+  #contact,
+  #projects {
+    height: fit-content;
+    background-color: #ffffff; /* White for contact and projects */
+  }
+  .section__text {
+    color: #444; /* Slightly darker text in sections */
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+    background-color: #f0f0f0; /* Light gray background for mobile nav */
+  }
+  .logo {
+    color: rgb(158, 55, 254); /* Keep logo color */
+  }
+  .menu-links {
+    background-color: white; /* Ensure menu background is white */
+  }
+  .menu-links a {
+    color: #333; /* Dark gray for mobile menu links */
+  }
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+    background-color: #ffffff; /* White for experience */
+  }
+  #profile,
+  .section-container {
+    display: block;
+    background-color: #f9f9f9; /* Light gray for mobile profile */
+  }
+  .arrow {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+  .about-containers {
+    margin-top: 0;
+    background-color: #ffffff; /* White for about section */
+  }
+  .details-container {
+    background-color: #fefefe; /* Slightly off-white for details boxes */
+    border-color: #ddd; /* Lighter border for details boxes */
+    color: #333; /* Darker text in details boxes */
+  }
+}
+
+.section__pic-container2 {
+  width: 150px;
+  height: 180px;
+  margin: 0 auto 0%;
+}
+.about-containers {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 600px) {
+  #contact,
+  footer {
+    height: 40vh;
+    background-color: #e9e9e9; /* Lighter gray for mobile contact and footer */
+    color: #555; /* Slightly lighter text in mobile contact and footer */
+  }
+  #profile {
+    height: 83vh;
+    margin-bottom: 0;
+    background-color: #f9f9f9; /* Keep light gray for mobile profile */
+  }
+  article {
+    font-size: 1rem;
+    color: #444; /* Slightly darker text in articles on mobile */
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .contact-info-upper-container {
+    background-color: #fefefe; /* Slightly off-white for contact info container */
+    border-color: #ddd; /* Lighter border */
+  }
+  .contact-info-container {
+    margin: 0;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+    color: #333; /* Darker text for mobile nav links and contact info */
+  }
+  .experience-sub-title {
+    font-size: 1.25rem;
+    color: #555; /* Slightly lighter subtitle on mobile */
+  }
+  .logo {
+    font-size: 1.5rem;
+    color: rgb(158, 55, 254); /* Keep logo color */
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    background-color: #f0f0f0; /* Light gray background for mobile nav links */
+  }
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+    background-color: transparent; /* Keep background transparent for image container */
+  }
+  .section__text__p2 {
+    font-size: 1.25rem;
+    color: #444; /* Slightly darker secondary text on mobile */
+  }
+  .title {
+    font-size: 2rem;
+    color: #333; /* Darker title on mobile */
+  }
+  .text-container {
+    text-align: justify;
+    color: #444; /* Slightly darker justified text on mobile */
+  }
+}
