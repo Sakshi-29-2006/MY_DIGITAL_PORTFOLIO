@@ -190,10 +190,11 @@ section {
 
 .section_text_p1 {
   text-align: center;
+  font-size: 4rem;
 }
 
 .section_text_p2 {
-  font-size: 1.75rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
   color: #333; /* Ensure text in this element uses the body text color */
 }
