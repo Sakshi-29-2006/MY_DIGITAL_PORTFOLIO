@@ -196,8 +196,14 @@ section {
 .section_text_p2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #333; /* Ensure text in this element uses the body text color */
+  color: #333;
+  display: block;        /* Default display for a <p>, keeps things simple */
+  text-align: left;      /* Aligns text to the left */
+  white-space: nowrap;   /* Keeps text on one line */
+  overflow: hidden;      /* Hides overflow if text is too long */
+  text-overflow: ellipsis; /* Optional: adds "..." if text overflows */
 }
+
 
 .title {
   font-size: 3rem;
