@@ -1,427 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Sakshi Mogali</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#Certificate">Certificate</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Sakshi Mogali</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-          
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#Certificate" onclick="toggleMenu()">Certificate</a></li>
-          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="profile-pic.png" alt="Sakshi Mogali profile picture" />
-      </div>
-      <div class="section__text">
-  <h1 class="section__text__p1">Hello, I'm</h1>
-  <h1 class="title">
-    <span class="letter">S</span><span class="letter">a</span><span class="letter">k</span><span class="letter">s</span><span class="letter">h</span><span class="letter">i</span>
-    <span class="letter"> </span>
-    <span class="letter">M</span><span class="letter">o</span><span class="letter">g</span><span class="letter">a</span><span class="letter">l</span><span class="letter">i</span>
-  </h1>
-  <p class="section__text__p2">I'm a Software Developer currently pursuing a B.Tech in Software Engineering, passionate about building efficient, user-friendly, and responsive digital solutions, and always eager to learn new tools and technologies to create impactful software.</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO WEBSITE</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="bx bx-moon" id="darkMode-icon"></div>
 
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+           <h1>Hello, I am</h1>
+           <h2>Sakshi Mogali</h2>
+           <p>A passionate software engineering student with a strong foundation in coding, problem-solving, and building smart, real-world solutions. I love turning ideas into efficient and user-friendly digital experiences.</p>
+           <div class="social-media">
+            <a href="https://github.com/Sakshi-29-2006"><i class='bx bxl-github' ></i></a>
+            <a href="https://www.linkedin.com/in/sakshi-mogali-2271892bb/"><i class='bx bxl-linkedin' ></i></a>
+           </div>
+           <a href="sakshimogali.pdf" class="btn">Download CV</a>
 
-        
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('sakshi.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='#contact'">
-            Contact Info
-          </button>
         </div>
-        <div id="socials-container">
-          <img
-            src="linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/sakshi-mogali-2271892bb/'"
-          />
-          <img
-            src="github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/Sakshi-29-2006'"
-          />
+
+        <div class="profession-container">
+            <div class="profession-box">
+                <div class="profession" style="--i:0;">
+                    <i class='bx bx-code-alt' ></i>
+                    <h3>Web Developer</h3>
+                </div>
+                <div class="profession" style="--i:1;">
+                    <i class='bx bx-code-alt' ></i>
+                    <h3>Software Developer</h3>
+                </div>
+                <div class="profession" style="--i:2;">
+                    <i class='bx bxl-sketch' ></i>
+                    <h3>Web Designer</h3>
+                </div>
+                <div class="profession" style="--i:3;">
+                    <i class='bx bxs-data' ></i>
+                    <h3>Data Analyst</h3>
+                </div>
+
+                <div class="circle"></div>
+            </div>
+            <div class="overlay"></div>
         </div>
-      </div>
+
+        <!-- <div class="home-img">
+            <img src="profile-pic-2.png" alt="">
+        </div> -->
     </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="about-pic.png" alt="">
         </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Goal</h3>
-              <p> To be<br />Software Developer</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Tech <i>persuing</i><br />12th HSC <i>scored- 88.33%</i><br />10th SSC <i>scored- 92.80%</i></p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              This portfolio represents my learning journey as a Software Engineering student. It highlights my problem-solving skills, practical knowledge, and the projects I have undertaken.
-              <br />I'm a passionate Software Engineering student at MIT Alandi with a strong foundation in programming and problem-solving. I love crafting efficient solutions, exploring new technologies, and continuously improving my skills. Currently, I'm focused on enhancing my development expertise while working on exciting projects. Looking forward to opportunities that allow me to grow and contribute in the tech industry.
-            </p>
-          </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <p>I'm a B.Tech student specializing in Software Engineering, passionate about solving real-world problems through technology. With a strong foundation in programming and a growing interest in IoT and smart systems, I enjoy creating projects that are both functional and impactful.
+
+                I take pride in being a quick learner, a team player, and someone who constantly seeks to improve. Whether it's web development, automation, or electronics, I love exploring new ideas and turning them into working solutions. My goal is to grow as a full-stack developer and contribute to meaningful tech innovations.</p>
+            <a href="#" class="btn">Read More</a>
         </div>
-      </div>
-      <img
-        src="arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        
-      />
     </section>
-    <section id="skills">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Skills</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Technical Skills</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p></p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p></p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p></p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Java</h3>
-                  <p></p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SQL</h3>
-                  <p></p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Linux</h3>
-                  <p></p>
-                </div>
-              </article>
+
+    <section class="services" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bxl-c-plus-plus'></i>
+                <h3>C++</h3>
             </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Personal Skills</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Self Motivated</h3>
-                  <p></p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Productive</h3>
-                  <p></p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Fast adaptive skills</h3>
-                  <p></p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Work Environment Adapatibility</h3>
-                  <p></p>
-                </div>
-              </article>
+            <div class="services-box">
+                <i class='bx bxl-html5' ></i>
+                <h3>HTML</h3>
             </div>
-          </div>
+            <div class="services-box">
+                <i class='bx bxl-css3' ></i>
+                <h3>CSS</h3>
+            </div>
+            <div class="services-box">
+                <i class='bx bxl-python' ></i>
+                <h3>Python</h3>
+            </div>
+            <div class="services-box">
+                <i class='bx bxl-javascript' ></i>
+                <h3>Javascript</h3>
+            </div>
+            <div class="services-box">
+                <i class='bx bxl-java' ></i>
+                <h3>Java</h3>
+            </div>
+            <div class="services-box">
+                <i class='bx bxl-postgresql' ></i>
+                <h3>SQL</h3>
+            </div>
+            <div class="services-box">
+                <i class='bx bxl-figma' ></i>
+                <h3>Figma</h3>
+            </div>
         </div>
-      </div>
-      <img
-        src="arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        
-      />
     </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="project.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <!-- <div>
-              <img src="kisancare.jpg" alt="">
-              <img src="sic1.png" alt="">
-              <img src="sic2.png" alt="">
-              <img src="sic3.png" alt="">
-              
-            </div> -->
-            <h2 class="experience-sub-title project-title">Project</h2>
-            <div class="btn-container">
-<!--               <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Sakshi-29-2006'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Sakshi-29-2006'"
-              >
-                Live Demo
-              </button> -->
-            </div>
-            <div class="pro-img-container">
-              <img src="kisancare.jpg" alt="KisanCare Project">
-              <div class="project-overlay">KisanCare</div>
-            </div>  
-            <div class="pro-img-container">
-              <img src="sic3.png" >
-              <div class="project-overlay">Output 3D surface</div>
-            </div>
-            <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Sakshi-29-2006'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Sakshi-29-2006'"
-              >
-                Live Demo
-              </button>
-          </div>
+
+    <section class="certifications" id="certificates">
+        <h2 class="heading">My <span>Certificates</span></h2>
+        <div class="certificates-container">
+          <img src="certificate1.jpg" alt="Certificate 1" class="cert-img">
+          <img src="certificate2.jpg" alt="Certificate 2" class="cert-img">
+          <img src="certificate3.jpg" alt="Certificate 2" class="cert-img">
+          <img src="certificate4.jpg" alt="Certificate 2" class="cert-img">
         </div>
-      </div>
-      <section id="Certificate">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Certificate</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="certificate1.jpg"
-                alt="certificate1"
-                class="project-img"
-              />
-            </div>     
-          </div>
+      
+        <!-- Lightbox -->
+        <div id="lightbox" class="lightbox">
+          <span id="close-btn">&times;</span>
+          <img id="lightbox-img" src="" alt="Zoomed Certificate">
         </div>
-      </div>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="certificate2.jpg"
-                alt="certificate2"
-                class="project-img"
-              />
-            </div>     
-          </div>
-        </div>
-      </div>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="certificate3.jpg"
-                alt="certificate3"
-                class="project-img"
-              />
-            </div>     
-          </div>
-        </div>
-      </div>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="certificate4.jpg"
-                alt="certificate4"
-                class="project-img"
-              />
-            </div>     
-          </div>
-        </div>
-      </div>
-      <img
-        src="arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        
-      />
     </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="section__pic-container2">
-        <img src="profile-pic-2.png" />
-      </div>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:sakshimogali29@gmail.com">sakshimogali29@gmail.com</a></p>
+    
+    <section class="portfolio" id="projects">
+        <h2 class="heading">My <span>Projects</span></h2>
+      
+        <div class="portfolio-container">
+          <img src="kisancare.jpg" alt="Kisancare Website" class="portfolio-img">
+          <img src="sic3.png" alt="3D Graph" class="portfolio-img">
+          <img src="pro1.png" alt="Plotting 3D Graphs" class="portfolio-img">
+          <img src="pro2.png" alt="Tableau Project" class="portfolio-img">
         </div>
-        <div class="contact-info-container">
-          <img
-            src="linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/sakshi-mogali-2271892bb/">LinkedIn</a></p>
+      
+        <!-- Lightbox Modal -->
+        <div id="portfolio-lightbox" class="lightbox">
+          <span class="close">&times;</span>
+          <img class="lightbox-content" id="portfolio-lightbox-img">
         </div>
-      </div>
     </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#Certificate">Certificate</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+      
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+          <div class="input-box">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+          </div>
+          <div class="input-box">
+            <input type="text" name="subject" placeholder="Subject" required>
+            <input type="tel" name="phone" placeholder="Phone Number">
+          </div>
+          <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      
+        <div class="contact-info">
+          <p><i class='bx bxl-gmail'></i> sakshimogali29@gmail.com</p>
+          <p><i class='bx bxl-linkedin'></i> <a href="https://www.linkedin.com/in/sakshi-mogali-2271892bb/" target="_blank">LinkedIn Profile</a></p>
         </div>
-      </nav>
-      <p>Copyright &#169; 2025 Sakshi Mogali. All Rights Reserved.</p>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2025 by Sakshi Mogali | All Rights Reserved.</p>
+
+            <div class="footer-iconTop">
+                <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+            </div>
+        </div>
     </footer>
-  </body>
+    <script src="https://unpkg.com/scrollreveal"></script> 
+    
+
+    <script src="script.js"></script>
+</body>
+
 </html>
-
-
